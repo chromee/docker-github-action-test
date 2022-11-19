@@ -13,7 +13,7 @@ ls -la
 
 echo "=================dotnet================="
 
-dotnet csproj/bin/Release/net6.0/DotNet.Docker.dll 5
+dotnet App/DotNet.Docker.dll 5
 
 echo "=================time================="
 
