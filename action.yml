@@ -6,6 +6,12 @@ inputs:
     description: "Who to greet"
     required: true
     default: "World"
+  file_path: # path of the field, jq style syntax.
+    description: "path of the file to read json from"
+    required: true
+  field_value: # path of the field, jq style syntax.
+    description: "value of the field, should be JSON compatible."
+    required: true
 outputs:
   time: # id of output
     description: "The time we greeted you"
