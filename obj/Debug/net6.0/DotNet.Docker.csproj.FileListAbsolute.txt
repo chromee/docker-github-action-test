@@ -1,0 +1,15 @@
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Debug\net6.0\DotNet.Docker.exe
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Debug\net6.0\DotNet.Docker.deps.json
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Debug\net6.0\DotNet.Docker.runtimeconfig.json
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Debug\net6.0\DotNet.Docker.dll
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Debug\net6.0\DotNet.Docker.pdb
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.csproj.AssemblyReference.cache
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.GeneratedMSBuildEditorConfig.editorconfig
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.AssemblyInfoInputs.cache
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.AssemblyInfo.cs
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.csproj.CoreCompileInputs.cache
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.dll
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\refint\DotNet.Docker.dll
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.pdb
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\DotNet.Docker.genruntimeconfig.cache
+E:\WorkSpaces\github_actions_training\min_dotnet\obj\Debug\net6.0\ref\DotNet.Docker.dll

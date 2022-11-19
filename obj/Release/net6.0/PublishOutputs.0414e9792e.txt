@@ -1,0 +1,5 @@
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Release\net6.0\publish\DotNet.Docker.exe
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Release\net6.0\publish\DotNet.Docker.dll
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Release\net6.0\publish\DotNet.Docker.deps.json
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Release\net6.0\publish\DotNet.Docker.runtimeconfig.json
+E:\WorkSpaces\github_actions_training\min_dotnet\bin\Release\net6.0\publish\DotNet.Docker.pdb
