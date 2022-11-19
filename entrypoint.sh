@@ -14,7 +14,7 @@ ls -la /App
 
 echo "=================dotnet================="
 
-dotnet /App/DotNet.Docker.dll $1 $2 $3
+dotnet /App/UnityPackgeUpdater.dll $1 $2 $3
 
 echo "=================time================="
 
