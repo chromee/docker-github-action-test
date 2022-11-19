@@ -5,15 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v3
-
       - name: pwd
         run: pwd
 
-      - name: ls -la
+      - name: ls -la prev checkout
+        run: ls -la
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: ls -la after checkout
         run: ls -la
 
       - name: Hello world action step
