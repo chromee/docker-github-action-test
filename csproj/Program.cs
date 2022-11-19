@@ -28,3 +28,6 @@ if (jsonObj == null)
 jsonObj["dependencies"][packageName]["hash"] = hash;
 string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
 File.WriteAllText(jsonPath, output);
+
+var fixedJson = File.ReadAllText(jsonPath);
+Console.WriteLine(fixedJson);
