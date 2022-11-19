@@ -17,13 +17,19 @@ jobs:
       - name: ls -la after checkout
         run: ls -la
 
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
+      - name: cat json prev fixed
+        run: cat samples/sample.json
+
+      - name: Update json
+        uses: ./
         id: hello
         with:
           json_path: samples/sample.json
           package_name: "com.unity.package"
           hash_value: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-      # Use the output from the `hello` step
+
+      - name: cat json after fixed
+        run: cat samples/sample.json
+
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
