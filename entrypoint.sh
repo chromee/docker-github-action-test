@@ -10,11 +10,11 @@ echo "=================ls -la================="
 
 pwd
 ls -la
-ls -la App
+ls -la /App
 
 echo "=================dotnet================="
 
-dotnet App/DotNet.Docker.dll 5
+dotnet /App/DotNet.Docker.dll 5
 
 echo "=================time================="
 
