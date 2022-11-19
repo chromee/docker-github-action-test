@@ -2,23 +2,22 @@
 name: "Hello World"
 description: "Greet someone and record the time"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
+  json_path:
+    description: "json_path"
     required: true
-    default: "World"
-  file_path: # path of the field, jq style syntax.
-    description: "path of the file to read json from"
+  package_name:
+    description: "package_name"
     required: true
-  field_value: # path of the field, jq style syntax.
-    description: "value of the field, should be JSON compatible."
+  hash_value:
+    description: "hash_value"
     required: true
 outputs:
-  time: # id of output
+  time:
     description: "The time we greeted you"
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.who-to-greet }}
-    - ${{ inputs.file_path }}
-    - ${{ inputs.field_value }}
+    - ${{ inputs.json_path }}
+    - ${{ inputs.package_name }}
+    - ${{ inputs.hash_value }}

@@ -21,9 +21,9 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: "Mona the Octocat"
-          file_path: samples/sample.json
-          field_value: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          json_path: samples/sample.json
+          package_name: "com.unity.package"
+          hash_value: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"

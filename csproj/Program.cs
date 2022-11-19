@@ -1,7 +1,30 @@
-﻿var counter = 0;
-var max = args.Length != 0 ? Convert.ToInt32(args[0]) : -1;
-while (max == -1 || counter < max)
+﻿using Newtonsoft.Json;
+
+if (args.Length < 3)
 {
-    Console.WriteLine($"Counter: {++counter}");
-    await Task.Delay(TimeSpan.FromMilliseconds(1_000));
+    Console.WriteLine("コマンドライン引数が足りません");
+    return;
 }
+
+var jsonPath = args[0];
+var packageName = args[1];
+var hash = args[2];
+
+if (string.IsNullOrEmpty(jsonPath))
+{
+    Console.WriteLine("jsonファイルが見つかりません");
+    return;
+}
+
+var json = File.ReadAllText(jsonPath);
+dynamic jsonObj = JsonConvert.DeserializeObject(json);
+
+if (jsonObj == null)
+{
+    Console.WriteLine("jsonのパースに失敗");
+    return;
+}
+
+jsonObj["dependencies"][packageName]["hash"] = hash;
+string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
+File.WriteAllText(jsonPath, output);
