@@ -22,7 +22,7 @@ jobs:
         id: hello
         with:
           who-to-greet: "Mona the Octocat"
-          file_path: sample.json
+          file_path: samples/sample.json
           field_value: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
       # Use the output from the `hello` step
       - name: Get the output time
